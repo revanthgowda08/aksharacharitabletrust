@@ -66,14 +66,25 @@
         <span class="prefix">₹</span>
         <input type="number" id="customAmount" min="1" placeholder="Enter a custom amount">
       </div>
-      <a
-        href="https://pages.razorpay.com/REPLACE-WITH-YOUR-PAYMENT-PAGE"
-        id="donateBtn"
-        class="btn btn-primary donate-cta"
-        target="_blank" rel="noopener">
+
+      <div class="form-row">
+        <div>
+          <label for="d-name">Your Name (optional)</label>
+          <input type="text" id="d-name" placeholder="For your receipt">
+        </div>
+        <div>
+          <label for="d-email">Email (optional)</label>
+          <input type="email" id="d-email" placeholder="For your receipt">
+        </div>
+      </div>
+
+      <button type="button" id="donateBtn" class="btn btn-primary donate-cta">
         Donate Now — Secure Checkout
-      </a>
-      <p class="form-note" style="margin-top:12px; text-align:center;">You'll confirm the final amount on our secure payment page. Cards, UPI and netbanking accepted.</p>
+      </button>
+      <p class="amount-error" id="amountError" hidden>Please choose or enter an amount first.</p>
+      <p class="form-note" style="margin-top:12px; text-align:center;">Opens Razorpay's secure checkout. Cards, UPI and netbanking accepted.</p>
+
+      <div class="form-success" id="donateSuccess">Thank you! Your payment was received — a receipt will follow by email if you provided one.</div>
 
       <div class="qr-block">
         <div class="qr-box">QR CODE PLACEHOLDER</div>
@@ -84,7 +95,7 @@
       </div>
 
       <div class="setup-notice" id="donateSetupNotice" hidden>
-        <strong>Setup needed:</strong> this button still points at a placeholder. Replace the <code>href</code> on <code>#donateBtn</code> in <code>donate.html</code> with your real Razorpay Payment Page (or Instamojo/PayPal) link, and swap the UPI ID and QR image once you have them. See the deployment notes for step-by-step instructions.
+        <strong>Setup needed:</strong> this button uses a placeholder Razorpay Key ID. Replace <code>RAZORPAY_KEY_ID</code> in <code>assets/js/donate.js</code> with your real one, and swap the UPI ID and QR image once you have them. See <code>google-apps-script/README.md</code> for the full setup steps.
       </div>
     </div>
 
@@ -167,6 +178,8 @@
 
 <button class="to-top" aria-label="Back to top">↑</button>
 <script src="assets/js/main.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="assets/js/gsheet-config.js"></script>
 <script src="assets/js/donate.js"></script>
 </body>
 </html>

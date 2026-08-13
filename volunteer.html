@@ -113,7 +113,7 @@
       <div class="form-error" id="v-error">Something went wrong sending this — please try again, or call us at 9986464634.</div>
 
       <div class="setup-notice" id="volunteerSetupNotice" hidden>
-        <strong>Setup needed:</strong> this form still points at placeholder Google Form field IDs. Create a Google Form linked to a Sheet, then replace <code>GOOGLE_FORM_ACTION</code> and the <code>entry.*</code> IDs in <code>assets/js/volunteer.js</code> with your real ones. See the deployment notes for exact steps.
+        <strong>Setup needed:</strong> this form isn't connected to a Google Sheet yet. See <code>google-apps-script/README.md</code> for a 5-minute setup, then paste your Web App URL into <code>assets/js/gsheet-config.js</code>.
       </div>
     </form>
   </div>
@@ -189,6 +189,7 @@
 
 <button class="to-top" aria-label="Back to top">↑</button>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/gsheet-config.js"></script>
 <script src="assets/js/volunteer.js"></script>
 </body>
 </html>

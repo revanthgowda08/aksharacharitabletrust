@@ -709,6 +709,7 @@ form.contact-form { display: grid; gap: 16px; }
 .form-success { background: #eaf5ec; border: 1px solid #bfe0c6; color: #205831; }
 .form-error { background: #fbeaea; border: 1px solid #e3b8b8; color: #7a2222; }
 .form-success.show, .form-error.show { display: block; }
+.amount-error { color: #a33; font-size: 0.85rem; text-align: center; margin: 8px 0 0; }
 
 /* ---------- Setup notice (dev-facing placeholder callouts) ---------- */
 .setup-notice {
