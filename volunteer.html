@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer — Akshara Charitable Trust</title>
+<meta name="description" content="Register to volunteer with Akshara Charitable Trust across education, health, rural-development and social-welfare programmes in Karnataka.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="logo-badge"><img src="assets/img/logo.png" alt="Akshara Charitable Trust emblem"></span>
+      <span class="brand-text">
+        <span class="name">Akshara Charitable Trust</span>
+        <span class="tag">Reg. No. 946/2019-2020</span>
+      </span>
+    </a>
+    <div class="header-actions">
+      <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="objectives.html">Objectives</a>
+      <a href="trustees.html">Trustees</a>
+      <a href="initiatives.html">Initiatives</a>
+      <a href="volunteer.html" class="active">Volunteer</a>
+      <a href="contact.html">Contact</a>
+      </nav>
+      <a href="donate.html" class="btn-donate">Donate</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero page-hero">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a> / Volunteer</div>
+    <div class="hero-inner">
+      <span class="eyebrow" style="color:var(--gold-light)">Get Involved</span>
+      <h1>Give your time, skills or voice.</h1>
+      <p class="lede">Akshara Charitable Trust runs on people as much as funding. Tell us where you'd like to help, and a trustee will reach out directly.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Register</span>
+      <h2>Volunteer Registration</h2>
+      <p>Fields marked * are required. Your details go straight to the Trust — we don't share them with anyone else.</p>
+    </div>
+
+    <form class="contact-form" id="volunteerForm" style="max-width:680px;margin:0 auto;">
+      <div class="form-row">
+        <div>
+          <label for="v-name">Full Name *</label>
+          <input type="text" id="v-name" required>
+        </div>
+        <div>
+          <label for="v-phone">Phone Number *</label>
+          <input type="tel" id="v-phone" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="v-email">Email Address</label>
+          <input type="email" id="v-email">
+        </div>
+        <div>
+          <label for="v-city">City / Area</label>
+          <input type="text" id="v-city" placeholder="e.g. Hebbal, Bangalore">
+        </div>
+      </div>
+
+      <div>
+        <label>Areas You'd Like to Help With</label>
+        <div class="check-grid">
+          <label class="check-item"><input type="checkbox" name="interest" value="Education & Training"> Education &amp; Training</label>
+          <label class="check-item"><input type="checkbox" name="interest" value="Health & Medical Camps"> Health &amp; Medical Camps</label>
+          <label class="check-item"><input type="checkbox" name="interest" value="Rural Development"> Rural Development</label>
+          <label class="check-item"><input type="checkbox" name="interest" value="Environment"> Environment</label>
+          <label class="check-item"><input type="checkbox" name="interest" value="Events & Fundraising"> Events &amp; Fundraising</label>
+          <label class="check-item"><input type="checkbox" name="interest" value="Legal Aid & Awareness"> Legal Aid &amp; Awareness</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="v-availability">Availability</label>
+        <select id="v-availability">
+          <option>Weekdays</option>
+          <option>Weekends</option>
+          <option>Flexible / Either</option>
+          <option>One-off events only</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="v-message">Anything else you'd like us to know?</label>
+        <textarea id="v-message" rows="4" placeholder="Relevant skills, past volunteering experience, availability details, etc."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="v-submit">Submit Registration</button>
+      <div class="form-success" id="v-success">Thank you — your registration has been recorded. A trustee will be in touch soon.</div>
+      <div class="form-error" id="v-error">Something went wrong sending this — please try again, or call us at 9986464634.</div>
+
+      <div class="setup-notice" id="volunteerSetupNotice" hidden>
+        <strong>Setup needed:</strong> this form still points at placeholder Google Form field IDs. Create a Google Form linked to a Sheet, then replace <code>GOOGLE_FORM_ACTION</code> and the <code>entry.*</code> IDs in <code>assets/js/volunteer.js</code> with your real ones. See the deployment notes for exact steps.
+      </div>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Why Volunteer</span>
+      <h2>Where volunteers make the biggest difference</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>Teaching &amp; Mentoring</h3>
+        <p>Support literacy classes, skill-training sessions and exam coaching for students and job-seekers.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🩺</div>
+        <h3>Medical Camps</h3>
+        <p>Help coordinate free health camps — registration, translation, or logistics on camp days.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌱</div>
+        <h3>Field &amp; Outreach</h3>
+        <p>Join rural-development visits, tree-planting drives, or awareness programmes in local communities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="logo-badge"><img src="assets/img/logo.png" alt="Akshara Charitable Trust emblem"></span>
+          <span>Akshara Charitable Trust</span>
+        </div>
+        <p>A public charitable trust (Reg. No. 946/2019-2020) working in education, vocational training, health and rural development across Karnataka, India.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="about.html">About the Trust</a></li>
+          <li><a href="objectives.html">Our Objectives</a></li>
+          <li><a href="trustees.html">Trustees</a></li>
+          <li><a href="initiatives.html">Initiatives</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="about.html#registration">Registration Details</a></li>
+          <li><a href="about.html#governance">Governing Clauses</a></li>
+          <li><a href="trustees.html#board">Board Structure</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p>No.6, 1st Main Road, Vinayaka Layout, Near Venkateshwara Temple, Hebbal, Kempapura, Bangalore – 560024</p>
+        <p>9986464634 · 9066699946</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span class="cur-year"></span> Akshara Charitable Trust (R). All rights reserved.</span>
+      <span>PAN: AAHTA9161F · Registration No. 946/2019-2020</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top">↑</button>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/volunteer.js"></script>
+</body>
+</html>

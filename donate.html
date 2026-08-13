@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate — Akshara Charitable Trust</title>
+<meta name="description" content="Support Akshara Charitable Trust's education, health and rural-development work with a one-time or UPI donation.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="logo-badge"><img src="assets/img/logo.png" alt="Akshara Charitable Trust emblem"></span>
+      <span class="brand-text">
+        <span class="name">Akshara Charitable Trust</span>
+        <span class="tag">Reg. No. 946/2019-2020</span>
+      </span>
+    </a>
+    <div class="header-actions">
+      <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="objectives.html">Objectives</a>
+      <a href="trustees.html">Trustees</a>
+      <a href="initiatives.html">Initiatives</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="contact.html">Contact</a>
+      </nav>
+      <a href="donate.html" class="btn-donate">Donate</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero page-hero">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a> / Donate</div>
+    <div class="hero-inner">
+      <span class="eyebrow" style="color:var(--gold-light)">Support Our Work</span>
+      <h1>Fund the next classroom, camp or clinic.</h1>
+      <p class="lede">Every contribution goes directly toward Akshara Charitable Trust's education, health and rural-development programmes — never toward trustee benefit, by the Trust Deed's own terms.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container split" style="align-items:start;">
+    <div class="donate-panel">
+      <span class="eyebrow">One-Time Donation</span>
+      <h2 style="font-size:1.5rem;">Choose an amount</h2>
+      <div class="amount-grid" id="amountGrid">
+        <button type="button" class="amount-btn" data-amount="500">₹500</button>
+        <button type="button" class="amount-btn" data-amount="1000">₹1,000</button>
+        <button type="button" class="amount-btn" data-amount="2500">₹2,500</button>
+        <button type="button" class="amount-btn" data-amount="5000">₹5,000</button>
+      </div>
+      <div class="custom-amount-wrap" id="customWrap">
+        <span class="prefix">₹</span>
+        <input type="number" id="customAmount" min="1" placeholder="Enter a custom amount">
+      </div>
+      <a
+        href="https://pages.razorpay.com/REPLACE-WITH-YOUR-PAYMENT-PAGE"
+        id="donateBtn"
+        class="btn btn-primary donate-cta"
+        target="_blank" rel="noopener">
+        Donate Now — Secure Checkout
+      </a>
+      <p class="form-note" style="margin-top:12px; text-align:center;">You'll confirm the final amount on our secure payment page. Cards, UPI and netbanking accepted.</p>
+
+      <div class="qr-block">
+        <div class="qr-box">QR CODE PLACEHOLDER</div>
+        <div>
+          <h4>Prefer UPI directly?</h4>
+          <p>Pay to <span class="upi-id">REPLACE-WITH-TRUST-UPI-ID@bank</span> and share your transaction ID with us via the <a href="contact.html">contact page</a> so we can send a receipt.</p>
+        </div>
+      </div>
+
+      <div class="setup-notice" id="donateSetupNotice" hidden>
+        <strong>Setup needed:</strong> this button still points at a placeholder. Replace the <code>href</code> on <code>#donateBtn</code> in <code>donate.html</code> with your real Razorpay Payment Page (or Instamojo/PayPal) link, and swap the UPI ID and QR image once you have them. See the deployment notes for step-by-step instructions.
+      </div>
+    </div>
+
+    <div>
+      <span class="eyebrow">Where It Goes</span>
+      <h2>What your donation could fund</h2>
+      <p>Akshara Charitable Trust's objects span education, health, rural development and social welfare. A donation of any size helps move real, on-record efforts — like the Trust's request for land to build a Pharmacy, Nursing and Paramedical institution — closer to reality.</p>
+      <div class="impact-row">
+        <div class="impact-item"><span class="amt">₹500</span><span class="desc">School supplies or a free medical-camp kit for one family</span></div>
+        <div class="impact-item"><span class="amt">₹2,500</span><span class="desc">A day of a skill-training or literacy session for a small group</span></div>
+        <div class="impact-item"><span class="amt">₹5,000+</span><span class="desc">Materials toward a rural-development or afforestation initiative</span></div>
+      </div>
+      <div class="notice">
+        <p><strong>On tax deductibility.</strong> Akshara Charitable Trust's 80G exemption registration is in progress (see <a href="about.html#governance">Governing Clauses</a>). Donation receipts are issued for every contribution; 80G tax-deduction certificates will be available once that registration is complete.</p>
+      </div>
+      <div class="notice" style="margin-top:16px;">
+        <p><strong>Bank transfers &amp; CSR/institutional giving.</strong> For NEFT/RTGS, cheque donations, or corporate CSR partnerships, please <a href="contact.html">contact the Trust directly</a> — our Managing Trustee will share verified account details and documentation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="callout">
+      <div>
+        <span class="eyebrow on-dark">Not Ready to Donate?</span>
+        <h2>Give your time instead.</h2>
+        <p>If funds aren't the right fit right now, Akshara Charitable Trust is also looking for volunteers across education, health and rural-development programmes.</p>
+      </div>
+      <div class="callout-actions">
+        <a href="volunteer.html" class="btn btn-primary">Register as a Volunteer</a>
+        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="logo-badge"><img src="assets/img/logo.png" alt="Akshara Charitable Trust emblem"></span>
+          <span>Akshara Charitable Trust</span>
+        </div>
+        <p>A public charitable trust (Reg. No. 946/2019-2020) working in education, vocational training, health and rural development across Karnataka, India.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="about.html">About the Trust</a></li>
+          <li><a href="objectives.html">Our Objectives</a></li>
+          <li><a href="trustees.html">Trustees</a></li>
+          <li><a href="initiatives.html">Initiatives</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="about.html#registration">Registration Details</a></li>
+          <li><a href="about.html#governance">Governing Clauses</a></li>
+          <li><a href="trustees.html#board">Board Structure</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p>No.6, 1st Main Road, Vinayaka Layout, Near Venkateshwara Temple, Hebbal, Kempapura, Bangalore – 560024</p>
+        <p>9986464634 · 9066699946</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span class="cur-year"></span> Akshara Charitable Trust (R). All rights reserved.</span>
+      <span>PAN: AAHTA9161F · Registration No. 946/2019-2020</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top">↑</button>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/donate.js"></script>
+</body>
+</html>
