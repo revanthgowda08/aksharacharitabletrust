@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Akshara Charitable Trust emblem</title>
+  <circle cx="60" cy="60" r="58" fill="#0f3d2e"/>
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#d4a340" stroke-width="2"/>
+  <!-- laurel left -->
+  <g stroke="#d4a340" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M32 88C24 76 22 60 28 44"/>
+    <path d="M28 50l-7-2 3-7"/>
+    <path d="M27 62l-7.5-1 2-7.3"/>
+    <path d="M29 74l-7-1 1-7"/>
+    <path d="M33 84l-6.5 1-1-7"/>
+  </g>
+  <!-- laurel right -->
+  <g stroke="#d4a340" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M88 88C96 76 98 60 92 44"/>
+    <path d="M92 50l7-2-3-7"/>
+    <path d="M93 62l7.5-1-2-7.3"/>
+    <path d="M91 74l7-1-1-7"/>
+    <path d="M87 84l6.5 1 1-7"/>
+  </g>
+  <!-- open book -->
+  <g fill="#f7ead0">
+    <path d="M60 46c-6-5-16-7-24-5v34c8-2 18 0 24 5V46z"/>
+    <path d="M60 46c6-5 16-7 24-5v34c-8-2-18 0-24 5V46z"/>
+  </g>
+  <path d="M60 46v34" stroke="#0f3d2e" stroke-width="1.5"/>
+  <!-- tree sprouting from book spine -->
+  <g stroke="#d4a340" stroke-width="2.2" stroke-linecap="round">
+    <path d="M60 46V30"/>
+    <path d="M60 36l-8-6"/>
+    <path d="M60 36l8-6"/>
+    <path d="M60 30l-6-7"/>
+    <path d="M60 30l6-7"/>
+  </g>
+  <circle cx="60" cy="21" r="3" fill="#d4a340"/>
+  <circle cx="52" cy="30" r="2.4" fill="#d4a340"/>
+  <circle cx="68" cy="30" r="2.4" fill="#d4a340"/>
+  <circle cx="54" cy="23" r="2" fill="#d4a340"/>
+  <circle cx="66" cy="23" r="2" fill="#d4a340"/>
+  <!-- three stars, tricolor nod -->
+  <g fill="#f7ead0">
+    <circle cx="60" cy="98" r="1.8"/>
+    <circle cx="50" cy="95" r="1.4"/>
+    <circle cx="70" cy="95" r="1.4"/>
+  </g>
+</svg>
