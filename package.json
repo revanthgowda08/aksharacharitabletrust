@@ -1,0 +1,12 @@
+{
+  "name": "akshara-charitable-trust-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for Akshara Charitable Trust",
+  "scripts": {
+    "start": "serve -l $PORT ."
+  },
+  "dependencies": {
+    "serve": "^14.2.3"
+  }
+}
