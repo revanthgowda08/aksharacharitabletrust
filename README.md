@@ -36,11 +36,7 @@ contact form) in `assets/js/main.js`, and the logo in `assets/img/logo.png` /
    Google Apps Script Web App, configured in `assets/js/gsheet-config.js`
    (`GSHEET_WEBAPP_URL`). See `google-apps-script/README.md` for the one-time, ~5 minute setup —
    it walks through creating a Sheet, pasting in `google-apps-script/Code.gs`, and deploying it.
-4. **Trustee photographs** — `trustees.html` and the homepage currently show trustees' initials
-   on a colored panel instead of photographs, since no image files were provided. Drop real
-   photos into `assets/img/` (e.g. `trustee-rahul.jpg`, `trustee-anusha.jpg`) and swap the
-   `<div class="trustee-photo">...</div>` blocks for an `<img>` tag.
-5. **Bank / donation details for offline giving** — intentionally left off this site. Share
+4. **Bank / donation details for offline giving** — intentionally left off this site. Share
    payment details with donors individually (phone/email) rather than publishing an account
    number publicly.
 
